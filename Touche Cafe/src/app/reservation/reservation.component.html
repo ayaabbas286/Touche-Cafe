@@ -1,0 +1,129 @@
+<!-- head section  -->
+<div
+  class="main-container-header d-flex flex-column bg-black pt-10 pt-md-8 pb-7 pb-md-0"
+>
+  <div
+    class="banner d-flex flex-column justify-content-center flex-grow-1 text-center container"
+  >
+    <h2>Reservation</h2>
+  </div>
+</div>
+<!-- RESERVATION -->
+<section class="reservation py-5 py-md-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6 text-center">
+        <!-- heading -->
+        <h2 class="mb-2">online Table reservation</h2>
+        <!-- subheading  -->
+        <p class="mb-2 text-secondary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+          illo praesentium sequi in cum, beatae maiores quae qui.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-8">
+        <form action="">
+          <div class="row gx-3">
+            <div class="col-md-6">
+              <!-- full name  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-name">Full Name</label>
+                <input
+                  class="form-control"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <!--  phone number  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-unmber"
+                  >Phone number</label
+                >
+                <input
+                  class="form-control"
+                  id="user-unmber"
+                  name="user-unmber"
+                  type="tel"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+              <!--  Email  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-email">Email</label>
+                <input
+                  class="form-control"
+                  id="user-email"
+                  name="user-email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- select guests number  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="guests">Guests</label>
+                <select class="form-select" name="guests" id="guests" required>
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 Person</option>
+                  <option value="3">3 Person</option>
+                  <option value="4">4 Person</option>
+                  <option value="5">5 Person</option>
+                </select>
+              </div>
+              <!-- Date  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-date">Date</label>
+                <input
+                  class="form-control"
+                  id="user-date"
+                  name="date"
+                  type="date"
+                  value="2021-02-12"
+                  required
+                />
+              </div>
+              <!-- Time  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="time">Time</label>
+                <input
+                  class="form-control"
+                  id="time"
+                  name="time"
+                  type="time"
+                  value="18:00"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col m-3 d-flex justify-content-center align-items-center">
+            <button class="btn resercebtn" type="submit">
+              Reserve a Table
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Maps  -->
+<div class="mt-5">
+  <section class="maps">
+    <div class="map-container">
+      <iframe
+        class="map-iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27407023514!2d-118.69192098776067!3d34.02016130037561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c0c7b9e8cd%3A0x8f1d2c8e76aa1d5e!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1692897536174!5m2!1sen!2seg"
+      >
+      </iframe>
+    </div>
+  </section>
+</div>

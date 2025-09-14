@@ -1,0 +1,89 @@
+.menu-item {
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border-left: 4px solid #17a2b8;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-info h5 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.menu-info p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.menu-price {
+  color: #17a2b8;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 15px;
+  flex-shrink: 0;
+}
+
+/* Animation when component loads */
+.row {
+  animation: zoomIn 0.6s ease-out;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .menu-item {
+    padding: 15px;
+  }
+
+  .menu-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .menu-info h5 {
+    font-size: 1rem;
+  }
+
+  .menu-info p {
+    font-size: 13px;
+  }
+
+  .menu-price {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}

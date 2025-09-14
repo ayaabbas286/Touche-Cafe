@@ -1,0 +1,96 @@
+/* head section  */
+.main-container-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/Images/29.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  color: white;
+  height: 75vh;
+  margin-top: -20px;
+}
+
+.banner h2 {
+  font-size: 52px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+/* nav and tabs  */
+.nav-tabs .nav-link {
+  color: #666;
+  font-weight: bold;
+}
+.nav-tabs .nav-link.active {
+  color: #000;
+  border-color: transparent transparent #e6a400 transparent;
+  border-width: 0 0 2px 0;
+}
+
+.menu-item img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.menu-info h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.menu-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+.menu-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+.menu-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* styling carousel */
+.menu-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.menu-card {
+  border: none;
+  width: 350px;
+}
+.menu-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+.min-slider h3 em {
+  font-family: "Playfair Display", serif;
+}
+.min-slider {
+  padding: 20px 10px;
+}
+/* reservation styling  */
+.reservation {
+  background-color: #eee;
+  height: 550px;
+}
+.resercebtn {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  padding: 20px !important;
+  width: 250px;
+  border-color: rgb(255, 157, 0) !important;
+}
+.reservation .form-control,
+.form-select {
+  padding: 15px;
+  border-radius: 5px;
+}

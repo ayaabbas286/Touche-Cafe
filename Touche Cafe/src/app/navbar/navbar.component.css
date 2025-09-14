@@ -1,0 +1,42 @@
+.navbar {
+  transition: all 0.3s ease;
+  height: 75px;
+}
+.logo-brand a {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 52px;
+  transition: color 0.3s ease;
+}
+.nav-link {
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: rgb(255, 157, 0);
+}
+
+/* scrolled navbar  */
+.navbar.scrolled {
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar.scrolled .active-link {
+  color: rgb(255, 157, 0) !important;
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled .logo-brand a {
+  color: #000;
+}
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .logo-brand:hover {
+  color: rgb(255, 157, 0) !important;
+}
+.active-link {
+  color: rgb(255, 157, 0);
+}

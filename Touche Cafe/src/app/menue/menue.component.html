@@ -1,0 +1,349 @@
+<!-- head section  -->
+<div
+  class="main-container-header d-flex flex-column bg-black pt-10 pt-md-8 pb-7 pb-md-0"
+>
+  <div
+    class="banner d-flex flex-column justify-content-center flex-grow-1 text-center container"
+  >
+    <h2>Menu</h2>
+  </div>
+</div>
+<!-- section nav and tabs  -->
+<section class="navAndTabs">
+  <div
+    class="d-flex flex-column justify-content-center align-items-center text-center m-5"
+  >
+    <h3>Menu options</h3>
+    <p class="text-secondary">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione numquam
+      eos perferendis itaque hic unde, ad, laudantium minima.
+    </p>
+  </div>
+
+  <div class="container">
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center mb-4">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/menu/main" routerLinkActive="active"
+          >MAINS</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/menu/lunch" routerLinkActive="active"
+          >LUNCH</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/menu/dinner" routerLinkActive="active"
+          >DINNER</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/menu/drinks" routerLinkActive="active"
+          >DRINKS</a
+        >
+      </li>
+    </ul>
+
+    <!-- Menu Content Container -->
+    <div class="menu-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>
+<!-- mini slider section  -->
+<section class="min-slider">
+  <div
+    class="d-flex flex-column justify-content-center align-items-center text-center m-5"
+  >
+    <h3>Our <em>featured</em> dishes</h3>
+    <p class="text-secondary">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam aliquam
+      id <br />sint accusamus eius voluptatum explicabo quae similique, quas.
+    </p>
+  </div>
+
+  <!-- start of carousel  -->
+  <div id="menuCarousel" class="carousel slide m-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+
+      <div class="carousel-item active">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/26.jpg"
+                class="card-img-top"
+                alt="Croissant"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$23</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/27.jpg"
+                class="card-img-top"
+                alt="Breakfast"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$32</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/28.jpg"
+                class="card-img-top"
+                alt="Dinner"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$15</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/29.jpg"
+                class="card-img-top"
+                alt="Pancake"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$42</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/29.jpg"
+                class="card-img-top"
+                alt="Food 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Another Food</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$19</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/30.jpg"
+                class="card-img-top"
+                alt="Food 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Another Food</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$22</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/31.jpg"
+                class="card-img-top"
+                alt="Food 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Another Food</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card menu-card">
+              <img
+                src="/assets/Images/27.jpg"
+                class="card-img-top"
+                alt="Food 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Another Food</h5>
+                <p class="card-text text-secondary">
+                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
+                </p>
+                <span class="menu-price">$25</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#menuCarousel"
+      data-bs-slide="prev"
+    >
+      <span
+        class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#menuCarousel"
+      data-bs-slide="next"
+    >
+      <span
+        class="carousel-control-next-icon bg-dark rounded-circle p-3"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!-- RESERVATION -->
+<section class="reservation py-5 py-md-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6 text-center">
+        <!-- heading -->
+        <h2 class="mb-2">Make online reservation</h2>
+        <!-- subheading  -->
+        <p class="mb-2 text-secondary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+          illo praesentium sequi in cum, beatae maiores quae qui.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-8">
+        <form action="">
+          <div class="row gx-3">
+            <div class="col-md-6">
+              <!-- full name  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-name">Full Name</label>
+                <input
+                  class="form-control"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <!--  phone number  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-unmber"
+                  >Phone number</label
+                >
+                <input
+                  class="form-control"
+                  id="user-unmber"
+                  name="user-unmber"
+                  type="tel"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+              <!--  Email  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-email">Email</label>
+                <input
+                  class="form-control"
+                  id="user-email"
+                  name="user-email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- select guests number  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="guests">Guests</label>
+                <select class="form-select" name="guests" id="guests" required>
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 Person</option>
+                  <option value="3">3 Person</option>
+                  <option value="4">4 Person</option>
+                  <option value="5">5 Person</option>
+                </select>
+              </div>
+              <!-- Date  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="user-date">Date</label>
+                <input
+                  class="form-control"
+                  id="user-date"
+                  name="date"
+                  type="date"
+                  value="2021-02-12"
+                  required
+                />
+              </div>
+              <!-- Time  -->
+              <div class="mb-3">
+                <label class="visually-hidden" for="time">Time</label>
+                <input
+                  class="form-control"
+                  id="time"
+                  name="time"
+                  type="time"
+                  value="18:00"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col m-3 d-flex justify-content-center align-items-center">
+            <button class="btn resercebtn" type="submit">
+              Reserve a Table
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

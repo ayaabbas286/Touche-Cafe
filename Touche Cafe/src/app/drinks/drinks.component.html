@@ -1,0 +1,14 @@
+<div class="row g-4">
+  @for (d of drinks; track d.id) {
+  <div class="col-md-6">
+    <div class="d-flex align-items-start menu-item">
+      <img [src]="d.image" class="me-3" [alt]="d.alt" loading="lazy" />
+      <div class="menu-info">
+        <h5>{{ d.name }}</h5>
+        <p>{{ d.description }}</p>
+      </div>
+      <div class="menu-price">${{ d.price }}</div>
+    </div>
+  </div>
+  }
+</div>

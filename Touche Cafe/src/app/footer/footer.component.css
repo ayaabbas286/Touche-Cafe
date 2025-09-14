@@ -1,0 +1,144 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 0 30px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  color: #d2691e;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  color: #888888;
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  color: #888888;
+  font-size: 14px;
+}
+
+.contact-item i {
+  margin-right: 12px;
+  font-size: 16px;
+  width: 20px;
+  flex-shrink: 0;
+  color: #d2691e;
+}
+
+.contact-item span {
+  line-height: 1.5;
+}
+
+.email-link {
+  color: #d2691e;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #cd853f;
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.days {
+  color: #888888;
+  font-weight: normal;
+}
+
+.time {
+  color: #888888;
+  text-align: right;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 0;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #333333;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  color: #888888;
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .hours-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .time {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    gap: 30px;
+    padding: 0 15px;
+  }
+
+  .footer-title {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .footer-text,
+  .contact-item,
+  .hours-item,
+  .copyright {
+    font-size: 13px;
+  }
+}

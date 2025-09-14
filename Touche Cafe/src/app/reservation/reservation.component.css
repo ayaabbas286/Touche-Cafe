@@ -1,0 +1,56 @@
+/* head section  */
+.main-container-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/Images/13.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner {
+  color: white;
+  height: 75vh;
+  margin-top: -20px;
+}
+
+.banner h2 {
+  font-size: 52px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+/* reservation styling  */
+.reservation {
+  background-color: #ffffff;
+  height: 550px;
+}
+.resercebtn {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  padding: 20px !important;
+  width: 250px;
+  border-color: rgb(255, 157, 0) !important;
+}
+.reservation .form-control,
+.form-select {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* maps  */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
