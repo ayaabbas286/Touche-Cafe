@@ -8,11 +8,10 @@ interface IDrink {
   alt: string;
 }
 @Component({
-  selector: 'app-drinks',
-  standalone: true,
-  imports: [],
-  templateUrl: './drinks.component.html',
-  styleUrl: './drinks.component.css'
+    selector: 'app-drinks',
+    imports: [],
+    templateUrl: './drinks.component.html',
+    styleUrl: './drinks.component.css'
 })
 export class DrinksComponent {
  drinks: IDrink[] = [

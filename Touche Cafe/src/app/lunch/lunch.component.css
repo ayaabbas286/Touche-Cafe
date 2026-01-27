@@ -3,7 +3,9 @@
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   height: 100%;
   border-left: 4px solid #28a745;
 }
@@ -14,8 +16,8 @@
 }
 
 .menu-item img {
-  width: 80px;
-  height: 80px;
+  width: 125px;
+  height: 125px;
   object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;

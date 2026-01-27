@@ -1,0 +1,106 @@
+/* Header */
+.gallery-header {
+  height: 50vh;
+  background-image: url("/assets/Images/7.jpg"); /* صورة خلفية مناسبة */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+/* Filter Buttons */
+.btn-filter {
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 0;
+  padding: 8px 20px;
+  transition: all 0.3s;
+  font-family: serif;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+  background-color: #ffc107;
+  color: #000;
+  border-color: #ffc107;
+}
+
+/* Image Card */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.transition-scale {
+  transition: transform 0.5s ease;
+}
+
+.img-wrapper:hover .transition-scale {
+  transform: scale(1.1);
+}
+
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-wrapper:hover .hover-overlay {
+  opacity: 1;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-img {
+  max-height: 85vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid #333;
+}
+
+.btn-close-custom {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 0.5s ease-in-out;
+}

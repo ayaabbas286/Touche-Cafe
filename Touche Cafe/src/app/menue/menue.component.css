@@ -1,6 +1,7 @@
 /* head section  */
 .main-container-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/Images/29.jpg");
   background-size: cover;
   background-position: center;

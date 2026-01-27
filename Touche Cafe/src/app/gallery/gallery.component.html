@@ -1,1 +1,86 @@
-<p>gallery works!</p>
+<!-- Gallery Header -->
+<div
+  class="gallery-header d-flex flex-column justify-content-center align-items-center text-center"
+>
+  <div class="overlay"></div>
+  <div class="content position-relative z-2">
+    <p class="text-uppercase tracking-wide text-warning mb-2">Our Atmosphere</p>
+    <h1 class="display-3 fw-bold text-white mb-4">Gallery</h1>
+  </div>
+</div>
+
+<section class="gallery-section py-5 bg-black">
+  <div class="container">
+    <!-- Filter Buttons -->
+    <div class="d-flex justify-content-center mb-5 gap-2">
+      <button
+        class="btn btn-filter"
+        [class.active]="currentFilter === 'all'"
+        (click)="filterGallery('all')"
+      >
+        All
+      </button>
+      <button
+        class="btn btn-filter"
+        [class.active]="currentFilter === 'interior'"
+        (click)="filterGallery('interior')"
+      >
+        Interior
+      </button>
+      <button
+        class="btn btn-filter"
+        [class.active]="currentFilter === 'food'"
+        (click)="filterGallery('food')"
+      >
+        Food & Drink
+      </button>
+      <button
+        class="btn btn-filter"
+        [class.active]="currentFilter === 'events'"
+        (click)="filterGallery('events')"
+      >
+        Events
+      </button>
+    </div>
+
+    <!-- Gallery Grid (Masonry Effect) -->
+    <div class="row g-4" data-masonry='{"percentPosition": true }'>
+      @for (img of filteredImages; track img.id) {
+        <div class="col-sm-6 col-lg-4 gallery-item animate-fade">
+          <div
+            class="card bg-dark border-0 overflow-hidden cursor-pointer"
+            (click)="openLightbox(img)"
+          >
+            <div class="img-wrapper">
+              <img
+                [src]="img.url"
+                class="img-fluid w-100 transition-scale"
+                [alt]="img.alt"
+              />
+              <div
+                class="hover-overlay d-flex justify-content-center align-items-center"
+              >
+                <i class="bi bi-zoom-in text-white fs-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal (Custom) -->
+@if (selectedImage) {
+  <div class="lightbox-modal" (click)="closeLightbox()">
+    <button class="btn-close-custom" (click)="closeLightbox()">&times;</button>
+    <div class="lightbox-content" (click)="$event.stopPropagation()">
+      <img
+        [src]="selectedImage.url"
+        class="img-fluid lightbox-img"
+        [alt]="selectedImage.alt"
+      />
+      <p class="text-white text-center mt-3">{{ selectedImage.alt }}</p>
+    </div>
+  </div>
+}

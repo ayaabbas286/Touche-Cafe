@@ -8,11 +8,10 @@ interface ILunch{
   alt: string;
 }
 @Component({
-  selector: 'app-lunch',
-  standalone: true,
-  imports: [],
-  templateUrl: './lunch.component.html',
-  styleUrl: './lunch.component.css'
+    selector: 'app-lunch',
+    imports: [],
+    templateUrl: './lunch.component.html',
+    styleUrl: './lunch.component.css'
 })
 export class LunchComponent {
 lunches: ILunch[] = [

@@ -8,11 +8,10 @@ interface IDinner{
   alt: string;
 }
 @Component({
-  selector: 'app-dinner',
-  standalone: true,
-  imports: [],
-  templateUrl: './dinner.component.html',
-  styleUrl: './dinner.component.css'
+    selector: 'app-dinner',
+    imports: [],
+    templateUrl: './dinner.component.html',
+    styleUrl: './dinner.component.css'
 })
 export class DinnerComponent {
 dinners :IDinner[] = [

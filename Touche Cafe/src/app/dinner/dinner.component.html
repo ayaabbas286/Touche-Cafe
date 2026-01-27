@@ -1,19 +1,19 @@
 <div class="row g-4">
   @for (dinner of dinners; track dinner.id) {
-  <div class="col-md-6">
-    <div class="d-flex align-items-start menu-item">
-      <img
-        [src]="dinner.image"
-        class="me-3"
-        [alt]="dinner.alt"
-        loading="lazy"
-      />
-      <div class="menu-info">
-        <h5>{{ dinner.name }}</h5>
-        <p>{{ dinner.description }}</p>
+    <div class="col-md-6">
+      <div class="d-flex align-items-start menu-item">
+        <img
+          [src]="dinner.image"
+          class="me-3"
+          [alt]="dinner.alt"
+          loading="lazy"
+        />
+        <div class="menu-info">
+          <h5 class="fw-bold">{{ dinner.name }}</h5>
+          <p>{{ dinner.description }}</p>
+        </div>
+        <div class="menu-price">${{ dinner.price }}</div>
       </div>
-      <div class="menu-price">${{ dinner.price }}</div>
     </div>
-  </div>
   }
 </div>

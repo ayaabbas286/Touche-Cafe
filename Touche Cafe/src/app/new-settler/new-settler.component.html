@@ -1,1 +1,175 @@
-<p>new-settler works!</p>
+<!-- Header Banner -->
+<div
+  class="events-header d-flex flex-column justify-content-center align-items-center text-center"
+>
+  <div class="overlay"></div>
+  <div class="content position-relative">
+    <p class="text-uppercase tracking-wide text-warning mb-2">Stay Updated</p>
+    <h1 class="display-3 fw-bold text-white mb-4">News & Events</h1>
+    <p class="lead text-white-50 mx-auto" style="max-width: 600px">
+      Join us for exclusive dining experiences, live music nights, and our
+      latest culinary announcements.
+    </p>
+  </div>
+</div>
+
+<!-- Upcoming Events Section -->
+<section class="upcoming-events py-5 bg-black">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h3 class="display-5 text-white mb-3">
+        Upcoming <span class="text-warning">Events</span>
+      </h3>
+      <div class="divider mx-auto bg-warning"></div>
+    </div>
+
+    <!-- Event 1: Jazz Night -->
+    <div class="card event-card mb-5 bg-dark text-white border-0 shadow-lg">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-6">
+          <div class="event-image-wrapper">
+            <!-- استبدل الرابط بصورة جاز -->
+            <img
+              src="/assets/Images/jazz.jpg"
+              class="img-fluid rounded-start w-100 h-100 object-fit-cover"
+              alt="Live Jazz"
+            />
+            <div class="date-badge">
+              <span class="d-block display-6 fw-bold">14</span>
+              <span class="text-uppercase small">Feb</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body p-5">
+            <h4 class="text-warning text-uppercase mb-2">Music Night</h4>
+            <h2 class="card-title mb-3">Valentine's Jazz Evening</h2>
+            <p class="card-text text-secondary mb-4">
+              Immerse yourself in the romantic tunes of the "Blue Note Quartet".
+              Enjoy a special 4-course dinner menu accompanied by smooth live
+              jazz.
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-clock text-warning"></i>
+              <span class="text-white-50">8:00 PM - 11:00 PM</span>
+            </div>
+            <a
+              routerLink="/reservation"
+              class="btn btn-outline-warning mt-4 px-4 py-2 rounded-0"
+              >Reserve Your Spot</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 2: Coffee Workshop -->
+    <div class="card event-card mb-5 bg-dark text-white border-0 shadow-lg">
+      <div class="row g-0 align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+          <div class="event-image-wrapper">
+            <!-- استبدل الرابط بصورة قهوة -->
+            <img
+              src="/assets/Images/coffee-workshop.jpg"
+              class="img-fluid rounded-end w-100 h-100 object-fit-cover"
+              alt="Coffee Tasting"
+            />
+            <div class="date-badge">
+              <span class="d-block display-6 fw-bold">20</span>
+              <span class="text-uppercase small">Feb</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-body p-5 text-md-end">
+            <h4 class="text-warning text-uppercase mb-2">Workshop</h4>
+            <h2 class="card-title mb-3">Art of Brewing</h2>
+            <p class="card-text text-secondary mb-4">
+              Learn the secrets of the perfect pour-over from our head barista.
+              A hands-on experience for true coffee lovers, including a tasting
+              session of our rare single-origin beans.
+            </p>
+            <div class="d-flex align-items-center justify-content-md-end gap-3">
+              <span class="text-white-50">10:00 AM - 1:00 PM</span>
+              <i class="bi bi-clock text-warning"></i>
+            </div>
+            <a
+              routerLink="/contact-us"
+              class="btn btn-outline-warning mt-4 px-4 py-2 rounded-0"
+              >Join Waiting List</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest News Grid -->
+<section class="latest-news py-5" style="background-color: #0a0a0a">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h3 class="text-white mb-3">
+        Latest <span class="text-warning">News</span>
+      </h3>
+      <p class="text-secondary">Stories from our kitchen and community</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- News Item 1 -->
+      <div class="col-md-4">
+        <div
+          class="news-card h-100 bg-black border border-secondary border-opacity-25 p-4"
+        >
+          <span class="badge bg-warning text-black mb-3 rounded-0"
+            >New Menu</span
+          >
+          <h4 class="text-white mb-3">Winter Menu Launch</h4>
+          <p class="text-secondary mb-4">
+            Embracing the season with root vegetables, hearty stews, and warming
+            spices. Our new winter collection is now served daily.
+          </p>
+          <a href="#" class="text-warning text-decoration-none"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- News Item 2 -->
+      <div class="col-md-4">
+        <div
+          class="news-card h-100 bg-black border border-secondary border-opacity-25 p-4"
+        >
+          <span class="badge bg-warning text-black mb-3 rounded-0">Award</span>
+          <h4 class="text-white mb-3">Best Espresso 2026</h4>
+          <p class="text-secondary mb-4">
+            We are humbled to be voted as Los Angeles' top espresso bar by the
+            Coffee Guild. Thank you to our amazing patrons!
+          </p>
+          <a href="#" class="text-warning text-decoration-none"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- News Item 3 -->
+      <div class="col-md-4">
+        <div
+          class="news-card h-100 bg-black border border-secondary border-opacity-25 p-4"
+        >
+          <span class="badge bg-warning text-black mb-3 rounded-0"
+            >Community</span
+          >
+          <h4 class="text-white mb-3">Supporting Local Farms</h4>
+          <p class="text-secondary mb-4">
+            Our commitment to sustainability grows stronger. Meet the local
+            farmers who supply our fresh organic milk and eggs.
+          </p>
+          <a href="#" class="text-warning text-decoration-none"
+            >Read More <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

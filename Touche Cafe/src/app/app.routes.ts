@@ -18,26 +18,26 @@ import { TestDirComponent } from './test-dir/test-dir.component';
 
 export const routes: Routes = [
 {path:"", redirectTo:"home", title:'home', pathMatch:'full'},
-{path:"home", component:HomeComponent, title:'home',children:[
-{path:"", component:MainComponent, title:"mains"},
-{path:"main", component:MainComponent, title:"mains"},
-{path:"dinner", component:DinnerComponent,title:"dinner"},
-{path:"lunch", component:LunchComponent ,title:"lunch"},
-{path:"drinks", component:DrinksComponent ,title:"drinks"}
+{path:"home", component:HomeComponent,children:[
+{path:"", component:MainComponent},
+{path:"main", component:MainComponent},
+{path:"dinner", component:DinnerComponent},
+{path:"lunch", component:LunchComponent},
+{path:"drinks", component:DrinksComponent }
 ]},
-{path:"about-us", component:AboutComponent, title:'About-us'},
-{path:"contact-us", component:ContactComponent, title:'contact-us'},
-{path:"navbar", component:NavbarComponent, title:'navbar'},
-{path:"new-settler", component:NewSettlerComponent, title:'newSettler'},
-{path:"footer", component:FooterComponent, title:'footer'},
-{path:"gallery", component:GalleryComponent, title:'Gallery'},
-{path:"reservation", component:ReservationComponent, title:'Reservation'},
-{path:"menu", component:MenueComponent, title:'Menu',children:[
+{path:"about-us", component:AboutComponent},
+{path:"contact-us", component:ContactComponent},
+{path:"navbar", component:NavbarComponent},
+{path:"new-settler", component:NewSettlerComponent},
+{path:"footer", component:FooterComponent},
+{path:"gallery", component:GalleryComponent},
+{path:"reservation", component:ReservationComponent, },
+{path:"menu", component:MenueComponent, children:[
 {path:"", component:MainComponent},
 {path:"main", component:MainComponent},
 {path:"dinner", component:DinnerComponent},
 {path:"lunch", component:LunchComponent },
 {path:"drinks", component:DrinksComponent }
 ]},
-{path:"**", component:ErrorComponent, title:"Not Found Page | 404"}
+{path:"**", component:ErrorComponent}
 ];

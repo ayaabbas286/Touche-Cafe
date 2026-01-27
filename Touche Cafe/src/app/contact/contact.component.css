@@ -1,0 +1,74 @@
+/* Header */
+.contact-header {
+  height: 40vh;
+  background-image: url("/assets/Images/21.jpg"); /* صورة مناسبة */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+/* Info Icons */
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 193, 7, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.contact-info-item:hover .icon-box {
+  background: #ffc107;
+  color: #000 !important;
+}
+
+.contact-info-item:hover .icon-box i {
+  color: #000 !important;
+}
+
+/* Social Buttons */
+.social-btn {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #333;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+}
+
+/* Form Styles */
+.form-control:focus {
+  background-color: #000;
+  color: #fff;
+  border-color: #ffc107;
+  box-shadow: none;
+}
+
+/* Map Style (Black & White Filter) */
+.grayscale-map {
+  filter: grayscale(100%) invert(90%);
+  transition: filter 0.5s;
+}
+
+.grayscale-map:hover {
+  filter: grayscale(0%);
+}

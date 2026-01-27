@@ -8,11 +8,10 @@ interface Imain{
   alt: string;
 }
 @Component({
-  selector: 'app-main',
-  standalone: true,
-  imports: [],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.css'
+    selector: 'app-main',
+    imports: [],
+    templateUrl: './main.component.html',
+    styleUrl: './main.component.css'
 })
 export class MainComponent {
 mains : Imain[] = [
