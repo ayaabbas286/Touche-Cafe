@@ -6,7 +6,8 @@ body {
 }
 /* head section  */
 .main-container-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/Images/1.jpg");
   background-size: cover;
   background-position: center;
@@ -260,7 +261,8 @@ body {
 }
 /* styling .upcoming-events  */
 .upcoming-events {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.514)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.514)),
     url(/assets/Images/8.jpg);
   background-size: cover;
   background-position: center;

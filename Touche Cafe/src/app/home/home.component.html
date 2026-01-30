@@ -129,31 +129,97 @@
   <div class="container">
     <!-- Tabs -->
     <ul class="nav nav-tabs justify-content-center mb-4">
+      <!-- mains tab  -->
       <li class="nav-item">
-        <a class="nav-link" routerLink="./main" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'mains'"
+          [class.active-tab]="menuService.selectedCategory() === 'mains'"
+          (click)="menuService.setCategory('mains')"
           >MAINS</a
         >
       </li>
+
+      <!-- lunch tab  -->
       <li class="nav-item">
-        <a class="nav-link" routerLink="./lunch" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'lunch'"
+          [class.active-tab]="menuService.selectedCategory() === 'lunch'"
+          (click)="menuService.setCategory('lunch')"
           >LUNCH</a
         >
       </li>
+      <!-- dinner tab  -->
       <li class="nav-item">
-        <a class="nav-link" routerLink="./dinner" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'dinner'"
+          [class.active-tab]="menuService.selectedCategory() === 'dinner'"
+          (click)="menuService.setCategory('dinner')"
           >DINNER</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="./drinks" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'drinks'"
+          [class.active-tab]="menuService.selectedCategory() === 'drinks'"
+          (click)="menuService.setCategory('drinks')"
           >DRINKS</a
         >
       </li>
     </ul>
-
     <!-- Menu Content Container -->
     <div class="menu-content">
-      <router-outlet></router-outlet>
+      <div class="row g-4">
+        @for (item of menuService.filteredMenu(); track item.id) {
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 p-2">
+              <div class="row g-0 align-items-center h-100">
+                <!-- Image -->
+                <div class="col-4">
+                  <img
+                    [src]="item.image"
+                    class="img-fluid rounded object-fit-cover"
+                    [alt]="item.name"
+                    style="height: 120px; width: 100%; object-fit: cover"
+                  />
+                </div>
+
+                <!-- Content -->
+                <div class="col-8">
+                  <div class="card-body py-0">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <h5 class="card-title fw-bold mb-0 fs-6">
+                        {{ item.name }}
+                      </h5>
+                      <span class="text-warning fw-bold"
+                        >${{ item.price }}</span
+                      >
+                    </div>
+                    <p class="card-text text-secondary small mb-0 lh-sm">
+                      {{ item.description }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        } @empty {
+          <!-- رسالة انتظار لطيفة -->
+          <div class="text-center py-5">
+            <div class="spinner-border text-warning" role="status"></div>
+            <p class="mt-2 text-secondary">Loading menu...</p>
+          </div>
+        }
+      </div>
     </div>
   </div>
 </section>
