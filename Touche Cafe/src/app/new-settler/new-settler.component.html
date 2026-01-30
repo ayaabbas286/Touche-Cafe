@@ -1,103 +1,97 @@
 <!-- Header Banner -->
-<div
-  class="events-header d-flex flex-column justify-content-center align-items-center text-center"
->
+<header class="events-header d-flex flex-column justify-content-center align-items-center text-center">
   <div class="overlay"></div>
-  <div class="content position-relative">
-    <p class="text-uppercase tracking-wide text-warning mb-2">Stay Updated</p>
-    <h1 class="display-3 fw-bold text-white mb-4">News & Events</h1>
-    <p class="lead text-white-50 mx-auto" style="max-width: 600px">
-      Join us for exclusive dining experiences, live music nights, and our
-      latest culinary announcements.
+  <div class="content position-relative px-3" data-aos="fade-up">
+    <p class="text-gold text-uppercase tracking-wider mb-3 small fw-bold">Discover What's New</p>
+    <h1 class="display-2 fw-bold text-white mb-4">News & Events</h1>
+    <div class="divider-custom"></div>
+    <p class="text-white-50 mx-auto fs-5 fw-light" style="max-width: 600px; line-height: 1.8;">
+      Join us for exclusive dining experiences, live music nights, and our latest culinary announcements.
     </p>
   </div>
-</div>
+</header>
 
 <!-- Upcoming Events Section -->
-<section class="upcoming-events py-5 bg-black">
+<section class="upcoming-events py-5" style="background-color: #0a0a0a;">
   <div class="container py-5">
-    <div class="text-center mb-5">
-      <h3 class="display-5 text-white mb-3">
-        Upcoming <span class="text-warning">Events</span>
-      </h3>
-      <div class="divider mx-auto bg-warning"></div>
+    
+    <!-- Section Title -->
+    <div class="text-center mb-5 pb-3">
+      <h3 class="display-5 text-white mb-2">Upcoming <span class="text-gold fst-italic">Events</span></h3>
+      <p class="text-muted small text-uppercase tracking-wider">Mark your calendars</p>
     </div>
 
     <!-- Event 1: Jazz Night -->
-    <div class="card event-card mb-5 bg-dark text-white border-0 shadow-lg">
-      <div class="row g-0 align-items-center">
-        <div class="col-md-6">
+    <div class="card event-card mb-5 rounded-0 border-0">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-lg-6">
           <div class="event-image-wrapper">
-            <!-- استبدل الرابط بصورة جاز -->
-            <img
-              src="/assets/Images/jazz.jpg"
-              class="img-fluid rounded-start w-100 h-100 object-fit-cover"
-              alt="Live Jazz"
-            />
+            <img src="/assets/Images/jazz.jpg" class="w-100 h-100 object-fit-cover" alt="Live Jazz" />
             <div class="date-badge">
-              <span class="d-block display-6 fw-bold">14</span>
-              <span class="text-uppercase small">Feb</span>
+              <span class="d-block display-5 fw-bold">14</span>
+              <span class="text-uppercase fw-bold">Feb</span>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 d-flex align-items-center">
           <div class="card-body p-5">
-            <h4 class="text-warning text-uppercase mb-2">Music Night</h4>
-            <h2 class="card-title mb-3">Valentine's Jazz Evening</h2>
-            <p class="card-text text-secondary mb-4">
-              Immerse yourself in the romantic tunes of the "Blue Note Quartet".
-              Enjoy a special 4-course dinner menu accompanied by smooth live
-              jazz.
+            <h5 class="text-gold text-uppercase tracking-wider mb-2" style="font-size: 0.8rem;">Music Night</h5>
+            <h2 class="card-title text-white mb-4 display-6">Valentine's Jazz Evening</h2>
+            <p class="card-text text-muted mb-4 fw-light" style="line-height: 1.8;">
+              Immerse yourself in the romantic tunes of the "Blue Note Quartet". 
+              Enjoy a special 4-course dinner menu accompanied by smooth live jazz in an atmosphere of refined elegance.
             </p>
-            <div class="d-flex align-items-center gap-3">
-              <i class="bi bi-clock text-warning"></i>
-              <span class="text-white-50">8:00 PM - 11:00 PM</span>
+            
+            <div class="d-flex align-items-center gap-4 mb-4 border-top border-secondary border-opacity-25 pt-4">
+              <div class="d-flex align-items-center text-white-50 small">
+                <i class="bi bi-clock text-gold me-2"></i> 8:00 PM - 11:00 PM
+              </div>
+              <div class="d-flex align-items-center text-white-50 small">
+                <i class="bi bi-geo-alt text-gold me-2"></i> Main Hall
+              </div>
             </div>
-            <a
-              routerLink="/reservation"
-              class="btn btn-outline-warning mt-4 px-4 py-2 rounded-0"
-              >Reserve Your Spot</a
-            >
+
+            <a routerLink="/reservation" class="btn btn-custom-outline rounded-0">
+              Reserve Your Spot
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Event 2: Coffee Workshop -->
-    <div class="card event-card mb-5 bg-dark text-white border-0 shadow-lg">
-      <div class="row g-0 align-items-center flex-md-row-reverse">
-        <div class="col-md-6">
+    <!-- Event 2: Coffee Workshop (Reversed) -->
+    <div class="card event-card mb-5 rounded-0 border-0">
+      <div class="row g-0 align-items-stretch flex-lg-row-reverse">
+        <div class="col-lg-6">
           <div class="event-image-wrapper">
-            <!-- استبدل الرابط بصورة قهوة -->
-            <img
-              src="/assets/Images/coffee-workshop.jpg"
-              class="img-fluid rounded-end w-100 h-100 object-fit-cover"
-              alt="Coffee Tasting"
-            />
-            <div class="date-badge">
-              <span class="d-block display-6 fw-bold">20</span>
-              <span class="text-uppercase small">Feb</span>
+            <img src="/assets/Images/coffee-workshop.jpg" class="w-100 h-100 object-fit-cover" alt="Coffee Workshop" />
+            <div class="date-badge" style="left: auto; right: 20px;">
+              <span class="d-block display-5 fw-bold">20</span>
+              <span class="text-uppercase fw-bold">Feb</span>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card-body p-5 text-md-end">
-            <h4 class="text-warning text-uppercase mb-2">Workshop</h4>
-            <h2 class="card-title mb-3">Art of Brewing</h2>
-            <p class="card-text text-secondary mb-4">
-              Learn the secrets of the perfect pour-over from our head barista.
-              A hands-on experience for true coffee lovers, including a tasting
-              session of our rare single-origin beans.
+        <div class="col-lg-6 d-flex align-items-center">
+          <div class="card-body p-5 text-lg-end">
+            <h5 class="text-gold text-uppercase tracking-wider mb-2" style="font-size: 0.8rem;">Masterclass</h5>
+            <h2 class="card-title text-white mb-4 display-6">Art of Brewing</h2>
+            <p class="card-text text-muted mb-4 fw-light" style="line-height: 1.8;">
+              Learn the secrets of the perfect pour-over from our head barista. 
+              A hands-on experience for true coffee lovers, including a tasting session of our rare single-origin beans.
             </p>
-            <div class="d-flex align-items-center justify-content-md-end gap-3">
-              <span class="text-white-50">10:00 AM - 1:00 PM</span>
-              <i class="bi bi-clock text-warning"></i>
+
+            <div class="d-flex align-items-center justify-content-lg-end gap-4 mb-4 border-top border-secondary border-opacity-25 pt-4">
+               <div class="d-flex align-items-center text-white-50 small">
+                <i class="bi bi-clock text-gold me-2"></i> 10:00 AM - 1:00 PM
+              </div>
+              <div class="d-flex align-items-center text-white-50 small">
+                <i class="bi bi-cup-hot text-gold me-2"></i> Brew Bar
+              </div>
             </div>
-            <a
-              routerLink="/contact-us"
-              class="btn btn-outline-warning mt-4 px-4 py-2 rounded-0"
-              >Join Waiting List</a
-            >
+
+            <a routerLink="/contact-us" class="btn btn-custom-outline rounded-0">
+              Join Waiting List
+            </a>
           </div>
         </div>
       </div>
@@ -106,68 +100,62 @@
 </section>
 
 <!-- Latest News Grid -->
-<section class="latest-news py-5" style="background-color: #0a0a0a">
+<section class="latest-news py-5" style="background-color: #0f0f0f;">
   <div class="container py-5">
-    <div class="text-center mb-5">
-      <h3 class="text-white mb-3">
-        Latest <span class="text-warning">News</span>
-      </h3>
-      <p class="text-secondary">Stories from our kitchen and community</p>
+    <div class="d-flex justify-content-between align-items-end mb-5">
+      <div>
+        <h3 class="text-white mb-2">Latest <span class="text-gold font-serif fst-italic">Stories</span></h3>
+        <p class="text-muted m-0 small">From our kitchen to your table</p>
+      </div>
+      <a href="#" class="btn btn-link text-gold text-decoration-none small tracking-wider d-none d-md-block">VIEW ALL POSTS</a>
     </div>
 
     <div class="row g-4">
       <!-- News Item 1 -->
       <div class="col-md-4">
-        <div
-          class="news-card h-100 bg-black border border-secondary border-opacity-25 p-4"
-        >
-          <span class="badge bg-warning text-black mb-3 rounded-0"
-            >New Menu</span
-          >
-          <h4 class="text-white mb-3">Winter Menu Launch</h4>
-          <p class="text-secondary mb-4">
-            Embracing the season with root vegetables, hearty stews, and warming
-            spices. Our new winter collection is now served daily.
+        <div class="news-card h-100">
+          <div class="mb-4">
+             <span class="news-badge">New Menu</span>
+          </div>
+          <h4 class="text-white mb-3 fs-4">Winter Menu Launch</h4>
+          <p class="text-muted mb-4 small fw-light">
+            Embracing the season with root vegetables, hearty stews, and warming spices. Our new winter collection is now served daily.
           </p>
-          <a href="#" class="text-warning text-decoration-none"
-            >Read More <i class="bi bi-arrow-right"></i
-          ></a>
+          <a href="#" class="read-more-link text-decoration-none">
+            Read Story <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
       </div>
 
       <!-- News Item 2 -->
       <div class="col-md-4">
-        <div
-          class="news-card h-100 bg-black border border-secondary border-opacity-25 p-4"
-        >
-          <span class="badge bg-warning text-black mb-3 rounded-0">Award</span>
-          <h4 class="text-white mb-3">Best Espresso 2026</h4>
-          <p class="text-secondary mb-4">
-            We are humbled to be voted as Los Angeles' top espresso bar by the
-            Coffee Guild. Thank you to our amazing patrons!
+        <div class="news-card h-100">
+          <div class="mb-4">
+            <span class="news-badge">Award</span>
+          </div>
+          <h4 class="text-white mb-3 fs-4">Best Espresso 2026</h4>
+          <p class="text-muted mb-4 small fw-light">
+            We are humbled to be voted as Los Angeles' top espresso bar by the Coffee Guild. Thank you to our amazing patrons!
           </p>
-          <a href="#" class="text-warning text-decoration-none"
-            >Read More <i class="bi bi-arrow-right"></i
-          ></a>
+          <a href="#" class="read-more-link text-decoration-none">
+            Read Story <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
       </div>
 
       <!-- News Item 3 -->
       <div class="col-md-4">
-        <div
-          class="news-card h-100 bg-black border border-secondary border-opacity-25 p-4"
-        >
-          <span class="badge bg-warning text-black mb-3 rounded-0"
-            >Community</span
-          >
-          <h4 class="text-white mb-3">Supporting Local Farms</h4>
-          <p class="text-secondary mb-4">
-            Our commitment to sustainability grows stronger. Meet the local
-            farmers who supply our fresh organic milk and eggs.
+        <div class="news-card h-100">
+          <div class="mb-4">
+            <span class="news-badge">Community</span>
+          </div>
+          <h4 class="text-white mb-3 fs-4">Supporting Local Farms</h4>
+          <p class="text-muted mb-4 small fw-light">
+            Our commitment to sustainability grows stronger. Meet the local farmers who supply our fresh organic milk and eggs.
           </p>
-          <a href="#" class="text-warning text-decoration-none"
-            >Read More <i class="bi bi-arrow-right"></i
-          ></a>
+          <a href="#" class="read-more-link text-decoration-none">
+            Read Story <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
       </div>
     </div>
