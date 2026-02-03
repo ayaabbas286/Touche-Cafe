@@ -2,3 +2,9 @@
 body {
   overflow-x: hidden;
 }
+:host {
+  --gold-color: #c5a47e;
+  --bg-dark: #0f0f0f;
+  --bg-card: #161616;
+  --text-muted: #b0b0b0;
+}

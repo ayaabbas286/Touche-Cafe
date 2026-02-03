@@ -1,8 +1,8 @@
 /* استيراد خطوط فخمة من Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap");
 
 :host {
-  --gold-color: #c5a47e; /* لون ذهبي هادئ بدل الأصفر الفاقع */
+  --gold-color: #c5a47e;
   --bg-dark: #0f0f0f;
   --bg-card: #161616;
   --text-muted: #b0b0b0;
@@ -10,30 +10,36 @@
 
 /* ============ General Styles ============ */
 .font-serif {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .font-sans {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .text-gold {
   color: var(--gold-color) !important;
 }
-.text-muted{
+.text-muted {
   color: aliceblue !important;
 }
 .bg-gold {
   background-color: var(--gold-color) !important;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
   letter-spacing: 0.5px;
 }
 
-p, span, a, div {
-  font-family: 'Montserrat', sans-serif;
+p,
+span,
+a,
+div {
+  font-family: "Montserrat", sans-serif;
 }
 
 .tracking-wider {
@@ -43,15 +49,22 @@ p, span, a, div {
 /* ============ Header Section ============ */
 .events-header {
   height: 60vh; /* ارتفاع مناسب للشاشات */
-  background: url('/assets/Images/hero-bg.jpg') no-repeat center center/cover; /* حط صورة خلفية هنا */
+  background: url("/assets/Images/News/bg.webp") no-repeat center center/cover; /* حط صورة خلفية هنا */
   position: relative;
   background-attachment: fixed; /* تأثير Parallax */
 }
 
 .events-header .overlay {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3), #0a0a0a); /* تدرج لوني ناعم */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    #0a0a0a
+  ); /* تدرج لوني ناعم */
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .divider-custom {
@@ -65,7 +78,9 @@ p, span, a, div {
 .event-card {
   background-color: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.05); /* بوردر شفاف جداً */
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
   overflow: hidden;
 }
 
@@ -102,7 +117,7 @@ p, span, a, div {
 }
 
 .date-badge span:first-child {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #fff;
 }
 
