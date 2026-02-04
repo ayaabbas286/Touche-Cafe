@@ -174,8 +174,14 @@ body {
   border-radius: 5px;
 }
 .menu-card {
+  width: 90%;
   border: none;
-  width: 350px;
+  height: 378px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-price {
   font-weight: bold;

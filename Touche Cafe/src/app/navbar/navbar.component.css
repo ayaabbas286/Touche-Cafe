@@ -17,7 +17,7 @@
   transition: color 0.3s ease;
 }
 .nav-link:hover {
-  color: rgb(255, 157, 0);
+  color: var(--gold-color);
 }
 
 /* scrolled navbar  */
@@ -26,7 +26,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .navbar.scrolled .active-link {
-  color: rgb(255, 157, 0) !important;
+  color: var(--gold-color) !important;
 }
 
 .navbar.scrolled .nav-link,
@@ -35,8 +35,8 @@
 }
 .navbar.scrolled .nav-link:hover,
 .navbar.scrolled .logo-brand:hover {
-  color: rgb(255, 157, 0) !important;
+  color: var(--gold-color) !important;
 }
 .active-link {
-  color: rgb(255, 157, 0);
+  color: var(--gold-color);
 }

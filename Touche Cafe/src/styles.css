@@ -2,9 +2,19 @@
 body {
   overflow-x: hidden;
 }
-:host {
-  --gold-color: #c5a47e;
+:root {
+  --gold-color: #ffc65d;
   --bg-dark: #0f0f0f;
   --bg-card: #161616;
   --text-muted: #b0b0b0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap");
+
+/* ============ General Styles ============ */
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.font-sans {
+  font-family: "Montserrat", sans-serif;
 }

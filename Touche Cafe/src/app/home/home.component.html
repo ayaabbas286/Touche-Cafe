@@ -240,7 +240,7 @@
     id="menuCarousel"
     class="carousel slide m-5"
     data-bs-ride="carousel"
-    data-bs-interval="2000"
+    data-bs-interval="5000"
   >
     <div class="carousel-inner">
       <!-- Slide 1 -->
@@ -253,7 +253,7 @@
             let i = $index
           ) {
             @if (i < 4) {
-              <div class="col-md-3">
+              <div class="centered col-md-3">
                 <div class="card menu-card">
                   <img
                     [src]="item.image"
@@ -283,7 +283,7 @@
             let i = $index
           ) {
             @if (i >= 4) {
-              <div class="col-md-3">
+              <div class="centered col-md-3">
                 <div class="card menu-card">
                   <img [src]="item.image" class="card-img-top" alt="Food 1" />
                   <div class="card-body">
