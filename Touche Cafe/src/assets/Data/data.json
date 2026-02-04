@@ -1,14 +1,15 @@
 [
   {
-    "id":1,
-     "name": "Gourmet Beef Burger",
+    "id": 1,
+    "name": "Gourmet Beef Burger",
     "price": 15,
     "category": "mains",
     "description": "Hand-pressed Angus beef patty, melted cheddar, caramelized onions, and house sauce on a brioche bun.",
-    "image": "assets/Images/mains/juicy-gourmet-burger-stockcake.webp"
-
-  },{
- "id": 2,
+    "image": "assets/Images/mains/juicy-gourmet-burger-stockcake.webp",
+    "featured": true
+  },
+  {
+    "id": 2,
     "name": "Pan-Seared Salmon",
     "price": 23,
     "category": "mains",
@@ -21,13 +22,14 @@
     "price": 28,
     "category": "mains",
     "description": "12oz Ribeye steak grilled to perfection, accompanied by roasted garlic mashed potatoes and seasonal vegetables.",
-    "image": "assets/Images/mains/FAW-recipes-butter-basted-rib-eye-steaks-hero-04-3e2903c4e3224bbc9419f4bbca69a9a7.jpg"
+    "image": "assets/Images/mains/FAW-recipes-butter-basted-rib-eye-steaks-hero-04-3e2903c4e3224bbc9419f4bbca69a9a7.jpg",
+    "featured": true
   },
   {
     "id": 4,
     "name": "Creamy Truffle Pasta",
     "price": 19,
-        "category": "mains",
+    "category": "mains",
     "description": "Fettuccine pasta tossed in a rich truffle cream sauce with wild mushrooms and parmesan shavings.",
     "image": "assets/Images/mains/CREAMYTRUFFLE_REGULAR_1200x.webp"
   },
@@ -35,7 +37,7 @@
     "id": 5,
     "name": "Grilled Chicken Supreme",
     "price": 18,
-        "category": "mains",
+    "category": "mains",
     "description": "Tender chicken breast served with herb-roasted potatoes and a creamy mushroom thyme sauce.",
     "image": "assets/Images/mains/16160-juicy-grilled-chicken-breasts-ddmfs-5594-hero-3x4-902673c819994c0191442304b40104af.jpg"
   },
@@ -43,25 +45,27 @@
     "id": 6,
     "name": "Vegetarian Buddha Bowl",
     "price": 16,
-        "category": "mains",
+    "category": "mains",
     "description": "A healthy mix of quinoa, avocado, chickpeas, roasted sweet potatoes, and tahini dressing.",
     "image": "assets/Images/mains/Vegan-Buddha-Bowl.jpg"
   },
-   {
+  {
     "id": 101,
     "name": "Grilled Chicken Salad",
     "price": 18,
-        "category": "lunch",
+    "category": "lunch",
     "description": "Fresh greens with grilled chicken, tomatoes, and house dressing.",
-    "image": "assets/Images/Lunch/fresh-vegetable-salad-with-grilled-chicken-breast_2829-14119.avif"
+    "image": "assets/Images/Lunch/fresh-vegetable-salad-with-grilled-chicken-breast_2829-14119.avif",
+    "featured": true
   },
   {
     "id": 102,
     "name": "Club Sandwich",
-       "category": "lunch",
+    "category": "lunch",
     "price": 12,
     "description": "Triple-layer sandwich with bacon, lettuce, tomato, and mayo.",
-    "image": "assets/Images/Lunch/club-sandwich1.webp"
+    "image": "assets/Images/Lunch/club-sandwich1.webp",
+    "featured": true
   },
   {
     "id": 103,
@@ -109,7 +113,8 @@
     "price": 28,
     "category": "dinner",
     "description": "Fresh Atlantic salmon with lemon butter sauce and rice.",
-    "image": "assets/Images/Dinner/R3022-final-photo-3.webp"
+    "image": "assets/Images/Dinner/R3022-final-photo-3.webp",
+    "featured": true
   },
   {
     "id": 203,
@@ -125,7 +130,8 @@
     "price": 36,
     "category": "dinner",
     "description": "Herb-crusted lamb chops with mint sauce and vegetables.",
-    "image": "assets/Images/Dinner/Tandoori-Lamb-Square-FS.jpg"
+    "image": "assets/Images/Dinner/Tandoori-Lamb-Square-FS.jpg",
+    "featured": true
   },
   {
     "id": 205,
@@ -143,13 +149,14 @@
     "description": "Slow-cooked duck leg with cherry sauce and roasted potatoes.",
     "image": "assets/Images/Dinner/DUCKCONFIT-blog-500x500.webp"
   },
-   {
+  {
     "id": 301,
     "name": "Cappuccino",
     "price": 5,
-       "category": "drinks",
+    "category": "drinks",
     "description": "Rich espresso with steamed milk foam and cocoa powder.",
-    "image": "assets/Images/Drinks/coffee-cup.jpg"
+    "image": "assets/Images/Drinks/coffee-cup.jpg",
+    "featured": true
   },
   {
     "id": 302,
@@ -165,7 +172,8 @@
     "price": 3,
     "category": "drinks",
     "description": "Refreshing iced tea with lemon slices and fresh herbs.",
-    "image": "assets/Images/Drinks/IcedTea_Hero_1856x517.jpg"
+    "image": "assets/Images/Drinks/IcedTea_Hero_1856x517.jpg",
+    "featured": true
   },
   {
     "id": 304,
