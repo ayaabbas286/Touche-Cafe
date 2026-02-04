@@ -1,7 +1,7 @@
 /* Header */
 .contact-header {
   height: 40vh;
-  background-image: url("/assets/Images/21.jpg"); /* صورة مناسبة */
+  background-image: url("/assets/Images/21.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -40,7 +40,7 @@
   width: 45px;
   height: 45px;
   border: 1px solid #333;
-  color: #fff;
+  color: #000000;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -57,12 +57,15 @@
 
 /* Form Styles */
 .form-control:focus {
-  background-color: #000;
+  background-color: transparent;
   color: #fff;
   border-color: #ffc107;
   box-shadow: none;
 }
 
+.submit {
+  background-color: var(--gold-color);
+}
 /* Map Style (Black & White Filter) */
 .grayscale-map {
   filter: grayscale(100%) invert(90%);
@@ -71,4 +74,8 @@
 
 .grayscale-map:hover {
   filter: grayscale(0%);
+}
+
+.card {
+  background: rgb(33 37 41 / 7%) !important;
 }
