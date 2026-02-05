@@ -1,10 +1,13 @@
 /* Header */
 .contact-header {
-  height: 40vh;
-  background-image: url("/assets/Images/21.jpg");
+  height: 70vh;
+  background-image: url("/assets/Images/intro-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
+}
+input{
+  border: 1px solid  rgba(33, 37, 41, 0.26) !important;;
 }
 
 .overlay {

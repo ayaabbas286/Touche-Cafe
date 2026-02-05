@@ -5,7 +5,7 @@
   <div class="overlay"></div>
   <div class="content position-relative z-2">
     <p class="text-uppercase tracking-wide text-warning mb-2">Get in Touch</p>
-    <h1 class="display-3 fw-bold text-black mb-4">Contact Us</h1>
+    <h1 class="display-3 fw-bold text-white mb-4">Contact Us</h1>
   </div>
 </div>
 
@@ -82,7 +82,7 @@
                 <div class="form-floating mb-3">
                   <input
                     type="text"
-                    class="form-control text-black border-secondary"
+                    class="form-control text-black "
                     id="name"
                     placeholder="Name"
                     required
@@ -96,7 +96,7 @@
                 <div class="form-floating mb-3">
                   <input
                     type="email"
-                    class="form-control text-black border-secondary"
+                    class="form-control text-black "
                     id="email"
                     placeholder="name@example.com"
                     required
@@ -111,7 +111,7 @@
                 <div class="form-floating mb-3">
                   <input
                     type="text"
-                    class="form-control text-black border-secondary"
+                    class="form-control text-black "
                     id="subject"
                     placeholder="Subject"
                     [(ngModel)]="model.subject"
@@ -124,7 +124,7 @@
               <div class="col-12">
                 <div class="form-floating mb-4">
                   <textarea
-                    class="form-control text-black border-secondary"
+                    class="form-control text-black "
                     placeholder="Leave a comment here"
                     id="message"
                     style="height: 150px"
@@ -139,7 +139,7 @@
               <div class="col-12 ">
                 <button
                   type="submit"
-                  class="btn submit btn-warning w-100 py-3 fw-bold text-uppercase tracking-wide"
+                  class="btn submit btn-warning mx-auto d- w-50 py-3 fw-bold text-uppercase tracking-wide"
                   [disabled]="!contactForm.valid"
                 >
                   Send Message
