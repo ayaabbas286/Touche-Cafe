@@ -1,6 +1,6 @@
 /* Header */
 .gallery-header {
-  height: 50vh;
+  height: 600px;
   background-image: url("/assets/Images/7.jpg"); /* صورة خلفية مناسبة */
   background-size: cover;
   background-position: center;
@@ -15,9 +15,9 @@
 
 /* Filter Buttons */
 .btn-filter {
-  color: #fff;
+  color: #000000;
   border: 1px solid #333;
-  border-radius: 0;
+  border-radius: 5;
   padding: 8px 20px;
   transition: all 0.3s;
   font-family: serif;
@@ -25,9 +25,9 @@
 
 .btn-filter:hover,
 .btn-filter.active {
-  background-color: #ffc107;
+  background-color: var(--gold-color);
   color: #000;
-  border-color: #ffc107;
+  border-color: var(--gold-color);
 }
 
 /* Image Card */
