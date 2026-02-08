@@ -1,76 +1,83 @@
 <!-- Header -->
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light p-3">
-  <div class="container p-2">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <div class="d-flex w-100 justify-content-between align-items-center">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="about-us"
-              routerLinkActive="active-link"
-              >ABOUT US
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="menu" routerLinkActive="active-link"
-              >MENU</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="reservation"
-              routerLinkActive="active-link"
-              >RESERVATION</a
-            >
-          </li>
-        </ul>
-        <div>
-          <h1 class="logo-brand m-0">
-            <a routerLink="home" routerLinkActive="active-link">Touché</a>
-          </h1>
-        </div>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="new-settler"
-              routerLinkActive="active-link"
-              >NEWS & EVENTS</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="/"
-              fragment="gallery"
-              [class.active-link]="isGalleryActive()"
-              >GALLERY</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="contact-us"
-              routerLinkActive="active-link"
-              >CONTACT</a
-            >
-          </li>
-        </ul>
+  <div class="sm-nav">
+    <div class="container p-2">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="">
+      <h1 class="logo-brand-sm d-none m-0">
+        <a routerLink="home" routerLinkActive="active-link">Touché</a>
+      </h1>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <div class="d-flex w-100 justify-content-between align-items-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="about-us"
+            routerLinkActive="active-link"
+            >ABOUT US
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="menu" routerLinkActive="active-link"
+            >MENU</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="reservation"
+            routerLinkActive="active-link"
+            >RESERVATION</a
+          >
+        </li>
+      </ul>
+      <div>
+        <h1 class="logo-brand m-0">
+          <a routerLink="home" routerLinkActive="active-link">Touché</a>
+        </h1>
       </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="new-settler"
+            routerLinkActive="active-link"
+            >NEWS & EVENTS</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/"
+            fragment="gallery"
+            [class.active-link]="isGalleryActive()"
+            >GALLERY</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="contact-us"
+            routerLinkActive="active-link"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

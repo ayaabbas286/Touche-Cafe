@@ -40,3 +40,45 @@
 .active-link {
   color: var(--gold-color);
 }
+@media (max-width: 767px) and (max-width: 991px) {
+  .logo-brand {
+    display: none;
+  }
+  .sm-nav {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar-toggler {
+    justify-content: center;
+  }
+  .logo-brand-sm {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    transition: color 0.3s ease;
+    display: block !important;
+
+    font-size: 2.3rem;
+  }
+  .logo-brand-sm a {
+    color: var(--gold-color);
+    text-decoration: none !important;
+  }
+  .navbar-collapse > div {
+    display: block !important;
+    text-align: center;
+    background-color: #ffffffeb;
+    border-radius: 15px;
+    width: 100%;
+  }
+  .navbar-collapse .nav-link {
+    color: #000 !important;
+  }
+  .navbar-collapse .nav-link:hover {
+    color: var(--gold-color);
+  }
+}
