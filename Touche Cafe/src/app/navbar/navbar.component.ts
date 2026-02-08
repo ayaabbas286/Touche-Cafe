@@ -1,13 +1,17 @@
-import { Component, HostListener } from '@angular/core';
-import { RouterLink, RouterLinkActive } from "@angular/router";
+import { Component, computed, effect, HostListener, inject, signal } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute, RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
     selector: 'app-navbar',
     imports: [RouterLink, RouterLinkActive],
     templateUrl: './navbar.component.html',
-    styleUrl: './navbar.component.css'
+    styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  private route = inject (ActivatedRoute)
+ fragment  = this.route.fragment
+GallerySignal = toSignal(this.fragment, {initialValue: null})
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const navbar = document.querySelector('.navbar');
@@ -17,4 +21,7 @@ export class NavbarComponent {
       navbar?.classList.remove('scrolled');
     }
   }
+isGalleryActive = computed(()=> {
+  return this.GallerySignal() === "gallery"
+})
 }

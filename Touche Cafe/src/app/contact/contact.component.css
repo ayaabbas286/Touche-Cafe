@@ -6,10 +6,12 @@
   background-position: center;
   position: relative;
 }
-input{
-  border: 1px solid  rgba(33, 37, 41, 0.26) !important;;
+input {
+  border: 1px solid rgba(33, 37, 41, 0.26) !important;
 }
-
+iframe {
+  display: block;
+}
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -68,15 +70,6 @@ input{
 
 .submit {
   background-color: var(--gold-color);
-}
-/* Map Style (Black & White Filter) */
-.grayscale-map {
-  filter: grayscale(100%) invert(90%);
-  transition: filter 0.5s;
-}
-
-.grayscale-map:hover {
-  filter: grayscale(0%);
 }
 
 .card {

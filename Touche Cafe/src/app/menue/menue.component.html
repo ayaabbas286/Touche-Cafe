@@ -23,31 +23,97 @@
   <div class="container">
     <!-- Tabs -->
     <ul class="nav nav-tabs justify-content-center mb-4">
+      <!-- mains tab  -->
       <li class="nav-item">
-        <a class="nav-link" routerLink="/menu/main" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'mains'"
+          [class.active-tab]="menuService.selectedCategory() === 'mains'"
+          (click)="menuService.setCategory('mains')"
           >MAINS</a
         >
       </li>
+
+      <!-- lunch tab  -->
       <li class="nav-item">
-        <a class="nav-link" routerLink="/menu/lunch" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'lunch'"
+          [class.active-tab]="menuService.selectedCategory() === 'lunch'"
+          (click)="menuService.setCategory('lunch')"
           >LUNCH</a
         >
       </li>
+      <!-- dinner tab  -->
       <li class="nav-item">
-        <a class="nav-link" routerLink="/menu/dinner" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'dinner'"
+          [class.active-tab]="menuService.selectedCategory() === 'dinner'"
+          (click)="menuService.setCategory('dinner')"
           >DINNER</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/menu/drinks" routerLinkActive="active"
+        <a
+          class="nav-link border-0 fw-bold px-4"
+          style="cursor: pointer"
+          [class.text-warning]="menuService.selectedCategory() === 'drinks'"
+          [class.active-tab]="menuService.selectedCategory() === 'drinks'"
+          (click)="menuService.setCategory('drinks')"
           >DRINKS</a
         >
       </li>
     </ul>
-
     <!-- Menu Content Container -->
     <div class="menu-content">
-      <router-outlet></router-outlet>
+      <div class="row g-4">
+        @for (item of menuService.filteredMenu(); track item.id) {
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 p-2">
+              <div class="row g-0 align-items-center h-100">
+                <!-- Image -->
+                <div class="col-4">
+                  <img
+                    [src]="item.image"
+                    class="img-fluid rounded object-fit-cover"
+                    [alt]="item.name"
+                    style="height: 120px; width: 100%; object-fit: cover"
+                  />
+                </div>
+
+                <!-- Content -->
+                <div class="col-8">
+                  <div class="card-body py-0">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <h5 class="card-title fw-bold mb-0 fs-6">
+                        {{ item.name }}
+                      </h5>
+                      <span class="text-warning fw-bold"
+                        >${{ item.price }}</span
+                      >
+                    </div>
+                    <p class="card-text text-secondary small mb-0 lh-sm">
+                      {{ item.description }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        } @empty {
+          <!-- رسالة انتظار لطيفة -->
+          <div class="text-center py-5">
+            <div class="spinner-border text-warning" role="status"></div>
+            <p class="mt-2 text-secondary">Loading menu...</p>
+          </div>
+        }
+      </div>
     </div>
   </div>
 </section>
@@ -64,152 +130,67 @@
   </div>
 
   <!-- start of carousel  -->
-  <div id="menuCarousel" class="carousel slide m-5" data-bs-ride="carousel">
+  <div
+    id="menuCarousel"
+    class="carousel slide m-5"
+    data-bs-ride="carousel"
+    data-bs-interval="5000"
+  >
     <div class="carousel-inner">
       <!-- Slide 1 -->
 
       <div class="carousel-item active">
         <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/26.jpg"
-                class="card-img-top"
-                alt="Croissant"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$23</span>
+          @for (
+            item of menuService.FeaturedMenu();
+            track item.id;
+            let i = $index
+          ) {
+            @if (i < 4) {
+              <div class="centered col-md-3">
+                <div class="card menu-card">
+                  <img
+                    [src]="item.image"
+                    class="card-img-top"
+                    alt="Croissant"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item.name }}</h5>
+                    <p class="card-text text-secondary">
+                      {{ item.description }}
+                    </p>
+                    <span class="menu-price">${{ item.price }}</span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/27.jpg"
-                class="card-img-top"
-                alt="Breakfast"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$32</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/28.jpg"
-                class="card-img-top"
-                alt="Dinner"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$15</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/29.jpg"
-                class="card-img-top"
-                alt="Pancake"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$42</span>
-              </div>
-            </div>
-          </div>
+            }
+          }
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/29.jpg"
-                class="card-img-top"
-                alt="Food 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Another Food</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$19</span>
+          @for (
+            item of menuService.FeaturedMenu();
+            track item.id;
+            let i = $index
+          ) {
+            @if (i >= 4) {
+              <div class="centered col-md-3">
+                <div class="card menu-card">
+                  <img [src]="item.image" class="card-img-top" alt="Food 1" />
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item.name }}</h5>
+                    <p class="card-text text-secondary">
+                      {{ item.description }}
+                    </p>
+                    <span class="menu-price">${{ item.price }}</span>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/30.jpg"
-                class="card-img-top"
-                alt="Food 2"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Another Food</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$22</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/31.jpg"
-                class="card-img-top"
-                alt="Food 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Another Food</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$30</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card menu-card">
-              <img
-                src="/assets/Images/27.jpg"
-                class="card-img-top"
-                alt="Food 4"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Another Food</h5>
-                <p class="card-text text-secondary">
-                  In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.
-                </p>
-                <span class="menu-price">$25</span>
-              </div>
-            </div>
-          </div>
+            }
+          }
         </div>
       </div>
     </div>

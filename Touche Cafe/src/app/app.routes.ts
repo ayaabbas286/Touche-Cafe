@@ -12,9 +12,9 @@ import { MenueComponent } from './menue/menue.component';
 import { MainComponent } from './main/main.component';
 import { DinnerComponent } from './dinner/dinner.component';
 import { LunchComponent } from './lunch/lunch.component';
-import { title } from 'process';
+
 import { DrinksComponent } from './drinks/drinks.component';
-import { TestDirComponent } from './test-dir/test-dir.component';
+
 
 export const routes: Routes = [
 {path:"", redirectTo:"home", title:'home', pathMatch:'full'},

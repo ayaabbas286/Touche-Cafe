@@ -2,7 +2,7 @@
 .main-container-header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/Images/29.jpg");
+    url("/assets/Images/food-img.webp");
   background-size: cover;
   background-position: center;
 }
@@ -60,8 +60,14 @@
   border-radius: 5px;
 }
 .menu-card {
+  width: 90%;
   border: none;
-  width: 350px;
+  height: 378px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-price {
   font-weight: bold;
