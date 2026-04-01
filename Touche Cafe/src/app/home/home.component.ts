@@ -49,7 +49,7 @@ export class HomeComponent {
 
     if (width <= 767) {
       this.imgnum = 1;
-    } else if (width > 767 && width <= 991) {
+    } else if (width > 767 && width <= 1200) {
       this.imgnum = 3;
     }
       

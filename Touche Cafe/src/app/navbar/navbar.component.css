@@ -40,7 +40,10 @@
 .active-link {
   color: var(--gold-color);
 }
-@media (max-width: 767px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
+  .navbar-collapse{
+    background: #ddd0d02e !important;
+  }
   .logo-brand {
     display: none;
   }

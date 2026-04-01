@@ -549,13 +549,14 @@ body {
     padding: 15px;
   }
   /*  menuCarousel*/
-  #menuCarousel .carousel-control-next {
-    left: 700px;
-    top: 22%;
+  #menuCarousel .carousel-control-next, #menuCarousel .carousel-control-prev {
+    display: none;
+    /* left: 670px;
+    top: 22%; */
   }
   #menuCarousel .carousel-control-prev {
-    left: -45px;
-    top: 22%;
+    /* left: -45px;
+    top: 22%; */
   }
   .map-iframe {
     position: absolute;
@@ -601,8 +602,17 @@ body {
     margin-right: -200px;
   }
 }
+
 /* midume */
 @media (min-width: 992px) {
+  /*  menuCarousel*/
+ #menuCarousel .carousel-control-next, #menuCarousel .carousel-control-prev {
+    display: none;
+    /* left: 670px;
+    top: 22%; */
+  }
+  /* testimonial */
+ 
   .map-iframe {
     position: absolute;
     top: -1px;
